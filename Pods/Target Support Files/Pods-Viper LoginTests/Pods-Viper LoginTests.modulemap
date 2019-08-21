@@ -1,0 +1,6 @@
+framework module Pods_Viper_LoginTests {
+  umbrella header "Pods-Viper LoginTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

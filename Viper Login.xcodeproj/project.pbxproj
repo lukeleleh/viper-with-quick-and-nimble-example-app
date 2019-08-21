@@ -1,0 +1,1221 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4861F8AE59C2935921D4E8B0 /* Pods_Viper_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A423485BC57AE5C159F3A0 /* Pods_Viper_Login.framework */; };
+		547328D4ED6EFDED8E829167 /* Pods_Viper_LoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2DE59EF068EC875AE74AEC /* Pods_Viper_LoginTests.framework */; };
+		BE1386FB22F59A8300E8C626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1386FA22F59A8300E8C626 /* AppDelegate.swift */; };
+		BE13870022F59A8300E8C626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1386FE22F59A8300E8C626 /* Main.storyboard */; };
+		BE13870222F59A8700E8C626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE13870122F59A8700E8C626 /* Assets.xcassets */; };
+		BE13870522F59A8700E8C626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE13870322F59A8700E8C626 /* LaunchScreen.storyboard */; };
+		BE13872F22F59E0400E8C626 /* UIViewController+InstantiateFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13872E22F59E0400E8C626 /* UIViewController+InstantiateFromStoryboard.swift */; };
+		BE13873022F59EC900E8C626 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13872222F59B0900E8C626 /* LoginPresenter.swift */; };
+		BE13873122F59ECA00E8C626 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE13872422F59B0900E8C626 /* LoginViewController.storyboard */; };
+		BE13873222F59ECA00E8C626 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13872522F59B0900E8C626 /* LoginViewController.swift */; };
+		BE13873322F59ECA00E8C626 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13872722F59B0900E8C626 /* LoginProtocols.swift */; };
+		BE13873422F59ECA00E8C626 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13872922F59B0900E8C626 /* LoginInteractor.swift */; };
+		BE13873522F59ECA00E8C626 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13872B22F59B0900E8C626 /* LoginRouter.swift */; };
+		BE13873822F5A1D600E8C626 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13873722F5A1D600E8C626 /* String+Localized.swift */; };
+		BE13873A22F5A20400E8C626 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE13873922F5A20400E8C626 /* Localizable.strings */; };
+		BE13873D22F5AE2D00E8C626 /* UserCredentialsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13873C22F5AE2D00E8C626 /* UserCredentialsValidator.swift */; };
+		BE16410722F5B37000DC2AC3 /* UserCredentialsValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16410622F5B37000DC2AC3 /* UserCredentialsValidationError.swift */; };
+		BE16410C22F5B88800DC2AC3 /* UserCredentialsValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16410B22F5B88800DC2AC3 /* UserCredentialsValidatorProtocol.swift */; };
+		BE16411122F5B8CA00DC2AC3 /* UserAuthenticatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16411022F5B8CA00DC2AC3 /* UserAuthenticatorProtocol.swift */; };
+		BE16411422F5B98300DC2AC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16411322F5B98300DC2AC3 /* User.swift */; };
+		BE16411622F5B99B00DC2AC3 /* UserAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16411522F5B99B00DC2AC3 /* UserAuthenticator.swift */; };
+		BE16411822F5BA1100DC2AC3 /* UserAuthenticationRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16411722F5BA1100DC2AC3 /* UserAuthenticationRequestError.swift */; };
+		BE16411E22F5BEDB00DC2AC3 /* MainQueueTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16411B22F5BEDB00DC2AC3 /* MainQueueTimer.swift */; };
+		BE16411F22F5BEDB00DC2AC3 /* QueueTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16411D22F5BEDB00DC2AC3 /* QueueTimer.swift */; };
+		BE362A6122F62C3600AA7450 /* UserAuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE362A6022F62C3600AA7450 /* UserAuthenticationError.swift */; };
+		BE3FDED8230B1EFD00DE71E2 /* UserAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDED7230B1EFD00DE71E2 /* UserAuthenticatorTests.swift */; };
+		BE3FDEDB230B1F6A00DE71E2 /* MockQueueTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEDA230B1F6A00DE71E2 /* MockQueueTimer.swift */; };
+		BE3FDEDE230B298200DE71E2 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEDD230B298200DE71E2 /* UserRepository.swift */; };
+		BE3FDEE1230B3E5F00DE71E2 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEE0230B3E5F00DE71E2 /* UserRepositoryProtocol.swift */; };
+		BE3FDEE4230B40FA00DE71E2 /* UserDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEE3230B40FA00DE71E2 /* UserDataSourceProtocol.swift */; };
+		BE3FDEE8230B427B00DE71E2 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEE7230B427B00DE71E2 /* UserResponse.swift */; };
+		BE3FDEEA230B429700DE71E2 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEE9230B429700DE71E2 /* UserDataSource.swift */; };
+		BE3FDEED230B434400DE71E2 /* UserDataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEEC230B434400DE71E2 /* UserDataSourceError.swift */; };
+		BE3FDEF0230B445900DE71E2 /* UserRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEEF230B445900DE71E2 /* UserRepositoryError.swift */; };
+		BE3FDEF3230B471900DE71E2 /* UserRepositoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEF2230B471900DE71E2 /* UserRepositoryMapper.swift */; };
+		BE3FDEF6230B4C1700DE71E2 /* UserAuthenticatorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEF5230B4C1700DE71E2 /* UserAuthenticatorMapper.swift */; };
+		BE3FDEF9230B542300DE71E2 /* UserCredentialsValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEF8230B542300DE71E2 /* UserCredentialsValidatorTests.swift */; };
+		BE3FDEFC230BC86E00DE71E2 /* UserDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FDEFB230BC86E00DE71E2 /* UserDataSourceTests.swift */; };
+		BE66ED2A230B11360093448E /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE66ED29230B11360093448E /* TestingAppDelegate.swift */; };
+		BE66ED2C230B11720093448E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE66ED2B230B11720093448E /* main.swift */; };
+		BE66ED32230B16660093448E /* MainQueueTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE66ED31230B16660093448E /* MainQueueTimerTests.swift */; };
+		BE8E8CFB230C1B41000A1C32 /* LoginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8CFA230C1B41000A1C32 /* LoginRouterTests.swift */; };
+		BE8E8CFE230C1D7D000A1C32 /* MockUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8CFD230C1D7D000A1C32 /* MockUIViewController.swift */; };
+		BE8E8D01230C2241000A1C32 /* AuthenticationResultMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D00230C2241000A1C32 /* AuthenticationResultMapper.swift */; };
+		BE8E8D05230C4EA0000A1C32 /* DispatchQueue+DispatchQueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D04230C4EA0000A1C32 /* DispatchQueue+DispatchQueueProtocol.swift */; };
+		BE8E8D09230C4EEC000A1C32 /* DispatchQueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D08230C4EEC000A1C32 /* DispatchQueueProtocol.swift */; };
+		BE8E8D0C230C4F70000A1C32 /* MockDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D0B230C4F70000A1C32 /* MockDispatchQueue.swift */; };
+		BE8E8D10230C53BF000A1C32 /* UserRepositoryMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D0F230C53BF000A1C32 /* UserRepositoryMapperTests.swift */; };
+		BE8E8D12230C564C000A1C32 /* MockUserRepositoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D11230C564C000A1C32 /* MockUserRepositoryMapper.swift */; };
+		BE8E8D14230C5AB8000A1C32 /* UserAuthenticatorMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D13230C5AB8000A1C32 /* UserAuthenticatorMapperTests.swift */; };
+		BE8E8D18230C5D6C000A1C32 /* MockUserAuthenticatorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D17230C5D6C000A1C32 /* MockUserAuthenticatorMapper.swift */; };
+		BE8E8D1A230C6017000A1C32 /* MockAuthenticationResultMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D19230C6017000A1C32 /* MockAuthenticationResultMapper.swift */; };
+		BE8E8D1C230C614B000A1C32 /* AuthenticationResultMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8D1B230C614B000A1C32 /* AuthenticationResultMapperTests.swift */; };
+		BEB6697E230BD2B3002A4093 /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6697D230BD2B3002A4093 /* MockUserRepository.swift */; };
+		BEB66983230BE93A002A4093 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB66982230BE93A002A4093 /* LoginInteractorTests.swift */; };
+		BEB66985230BE969002A4093 /* MockUserCredentialsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB66984230BE969002A4093 /* MockUserCredentialsValidator.swift */; };
+		BEB66987230BE9EF002A4093 /* MockUserAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB66986230BE9EF002A4093 /* MockUserAuthenticator.swift */; };
+		BEB6698A230BFB7D002A4093 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB66989230BFB7D002A4093 /* LoginPresenterTests.swift */; };
+		BEB6698D230BFBBB002A4093 /* MockLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6698C230BFBBB002A4093 /* MockLoginView.swift */; };
+		BEB6698F230BFC0F002A4093 /* MockLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6698E230BFC0F002A4093 /* MockLoginInteractor.swift */; };
+		BEB66991230BFC84002A4093 /* MockLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB66990230BFC84002A4093 /* MockLoginRouter.swift */; };
+		BEE29046230BC92500C2D5FA /* Result+GetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE29045230BC92500C2D5FA /* Result+GetError.swift */; };
+		BEE2904A230BCB1C00C2D5FA /* UserRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE29049230BCB1C00C2D5FA /* UserRepositoryTests.swift */; };
+		BEE2904D230BCB4E00C2D5FA /* MockUserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE2904C230BCB4E00C2D5FA /* MockUserDataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE13870C22F59A8700E8C626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE1386EF22F59A8300E8C626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1386F622F59A8300E8C626;
+			remoteInfo = "Viper Login";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		098D926B5E13E89535E2112A /* Pods-Viper Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper Login.release.xcconfig"; path = "Target Support Files/Pods-Viper Login/Pods-Viper Login.release.xcconfig"; sourceTree = "<group>"; };
+		31A423485BC57AE5C159F3A0 /* Pods_Viper_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F6D90307DFAE0D3C918150 /* Pods-Viper LoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper LoginTests.debug.xcconfig"; path = "Target Support Files/Pods-Viper LoginTests/Pods-Viper LoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E0F1BB1EAEB709121E0EA58 /* Pods-Viper Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper Login.debug.xcconfig"; path = "Target Support Files/Pods-Viper Login/Pods-Viper Login.debug.xcconfig"; sourceTree = "<group>"; };
+		AA2DE59EF068EC875AE74AEC /* Pods_Viper_LoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper_LoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1386F722F59A8300E8C626 /* Viper Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1386FA22F59A8300E8C626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE1386FF22F59A8300E8C626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE13870122F59A8700E8C626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE13870422F59A8700E8C626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE13870622F59A8700E8C626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE13870B22F59A8700E8C626 /* Viper LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viper LoginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE13871122F59A8700E8C626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE13872222F59B0900E8C626 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		BE13872422F59B0900E8C626 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		BE13872522F59B0900E8C626 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BE13872722F59B0900E8C626 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		BE13872922F59B0900E8C626 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		BE13872B22F59B0900E8C626 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		BE13872E22F59E0400E8C626 /* UIViewController+InstantiateFromStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+InstantiateFromStoryboard.swift"; sourceTree = "<group>"; };
+		BE13873722F5A1D600E8C626 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		BE13873922F5A20400E8C626 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BE13873C22F5AE2D00E8C626 /* UserCredentialsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentialsValidator.swift; sourceTree = "<group>"; };
+		BE16410622F5B37000DC2AC3 /* UserCredentialsValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentialsValidationError.swift; sourceTree = "<group>"; };
+		BE16410B22F5B88800DC2AC3 /* UserCredentialsValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentialsValidatorProtocol.swift; sourceTree = "<group>"; };
+		BE16411022F5B8CA00DC2AC3 /* UserAuthenticatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticatorProtocol.swift; sourceTree = "<group>"; };
+		BE16411322F5B98300DC2AC3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BE16411522F5B99B00DC2AC3 /* UserAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticator.swift; sourceTree = "<group>"; };
+		BE16411722F5BA1100DC2AC3 /* UserAuthenticationRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationRequestError.swift; sourceTree = "<group>"; };
+		BE16411B22F5BEDB00DC2AC3 /* MainQueueTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainQueueTimer.swift; sourceTree = "<group>"; };
+		BE16411D22F5BEDB00DC2AC3 /* QueueTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTimer.swift; sourceTree = "<group>"; };
+		BE362A6022F62C3600AA7450 /* UserAuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationError.swift; sourceTree = "<group>"; };
+		BE3FDED7230B1EFD00DE71E2 /* UserAuthenticatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticatorTests.swift; sourceTree = "<group>"; };
+		BE3FDEDA230B1F6A00DE71E2 /* MockQueueTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQueueTimer.swift; sourceTree = "<group>"; };
+		BE3FDEDD230B298200DE71E2 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		BE3FDEE0230B3E5F00DE71E2 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
+		BE3FDEE3230B40FA00DE71E2 /* UserDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSourceProtocol.swift; sourceTree = "<group>"; };
+		BE3FDEE7230B427B00DE71E2 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		BE3FDEE9230B429700DE71E2 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
+		BE3FDEEC230B434400DE71E2 /* UserDataSourceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSourceError.swift; sourceTree = "<group>"; };
+		BE3FDEEF230B445900DE71E2 /* UserRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryError.swift; sourceTree = "<group>"; };
+		BE3FDEF2230B471900DE71E2 /* UserRepositoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMapper.swift; sourceTree = "<group>"; };
+		BE3FDEF5230B4C1700DE71E2 /* UserAuthenticatorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticatorMapper.swift; sourceTree = "<group>"; };
+		BE3FDEF8230B542300DE71E2 /* UserCredentialsValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentialsValidatorTests.swift; sourceTree = "<group>"; };
+		BE3FDEFB230BC86E00DE71E2 /* UserDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSourceTests.swift; sourceTree = "<group>"; };
+		BE66ED29230B11360093448E /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		BE66ED2B230B11720093448E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BE66ED31230B16660093448E /* MainQueueTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueTimerTests.swift; sourceTree = "<group>"; };
+		BE8E8CFA230C1B41000A1C32 /* LoginRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
+		BE8E8CFD230C1D7D000A1C32 /* MockUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUIViewController.swift; sourceTree = "<group>"; };
+		BE8E8D00230C2241000A1C32 /* AuthenticationResultMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultMapper.swift; sourceTree = "<group>"; };
+		BE8E8D04230C4EA0000A1C32 /* DispatchQueue+DispatchQueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+DispatchQueueProtocol.swift"; sourceTree = "<group>"; };
+		BE8E8D08230C4EEC000A1C32 /* DispatchQueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueProtocol.swift; sourceTree = "<group>"; };
+		BE8E8D0B230C4F70000A1C32 /* MockDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDispatchQueue.swift; sourceTree = "<group>"; };
+		BE8E8D0F230C53BF000A1C32 /* UserRepositoryMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMapperTests.swift; sourceTree = "<group>"; };
+		BE8E8D11230C564C000A1C32 /* MockUserRepositoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRepositoryMapper.swift; sourceTree = "<group>"; };
+		BE8E8D13230C5AB8000A1C32 /* UserAuthenticatorMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticatorMapperTests.swift; sourceTree = "<group>"; };
+		BE8E8D17230C5D6C000A1C32 /* MockUserAuthenticatorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserAuthenticatorMapper.swift; sourceTree = "<group>"; };
+		BE8E8D19230C6017000A1C32 /* MockAuthenticationResultMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthenticationResultMapper.swift; sourceTree = "<group>"; };
+		BE8E8D1B230C614B000A1C32 /* AuthenticationResultMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultMapperTests.swift; sourceTree = "<group>"; };
+		BEB6697D230BD2B3002A4093 /* MockUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
+		BEB66982230BE93A002A4093 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		BEB66984230BE969002A4093 /* MockUserCredentialsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserCredentialsValidator.swift; sourceTree = "<group>"; };
+		BEB66986230BE9EF002A4093 /* MockUserAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserAuthenticator.swift; sourceTree = "<group>"; };
+		BEB66989230BFB7D002A4093 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		BEB6698C230BFBBB002A4093 /* MockLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginView.swift; sourceTree = "<group>"; };
+		BEB6698E230BFC0F002A4093 /* MockLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginInteractor.swift; sourceTree = "<group>"; };
+		BEB66990230BFC84002A4093 /* MockLoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginRouter.swift; sourceTree = "<group>"; };
+		BEE29045230BC92500C2D5FA /* Result+GetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+GetError.swift"; sourceTree = "<group>"; };
+		BEE29049230BCB1C00C2D5FA /* UserRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTests.swift; sourceTree = "<group>"; };
+		BEE2904C230BCB4E00C2D5FA /* MockUserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDataSource.swift; sourceTree = "<group>"; };
+		CCEF1D76A28C78609F397F2D /* Pods-Viper LoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper LoginTests.release.xcconfig"; path = "Target Support Files/Pods-Viper LoginTests/Pods-Viper LoginTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE1386F422F59A8300E8C626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4861F8AE59C2935921D4E8B0 /* Pods_Viper_Login.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE13870822F59A8700E8C626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547328D4ED6EFDED8E829167 /* Pods_Viper_LoginTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53F54E55235F07F2E3989A91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F1BB1EAEB709121E0EA58 /* Pods-Viper Login.debug.xcconfig */,
+				098D926B5E13E89535E2112A /* Pods-Viper Login.release.xcconfig */,
+				39F6D90307DFAE0D3C918150 /* Pods-Viper LoginTests.debug.xcconfig */,
+				CCEF1D76A28C78609F397F2D /* Pods-Viper LoginTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6AEF1518074B1215DBF72F50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31A423485BC57AE5C159F3A0 /* Pods_Viper_Login.framework */,
+				AA2DE59EF068EC875AE74AEC /* Pods_Viper_LoginTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE1386EE22F59A8300E8C626 = {
+			isa = PBXGroup;
+			children = (
+				BE1386F922F59A8300E8C626 /* Viper Login */,
+				BE13870E22F59A8700E8C626 /* Viper LoginTests */,
+				BE1386F822F59A8300E8C626 /* Products */,
+				53F54E55235F07F2E3989A91 /* Pods */,
+				6AEF1518074B1215DBF72F50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE1386F822F59A8300E8C626 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE1386F722F59A8300E8C626 /* Viper Login.app */,
+				BE13870B22F59A8700E8C626 /* Viper LoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE1386F922F59A8300E8C626 /* Viper Login */ = {
+			isa = PBXGroup;
+			children = (
+				BE13871A22F59ACB00E8C626 /* Sources */,
+				BE13871B22F59AD300E8C626 /* Resources */,
+				BE13871C22F59AD700E8C626 /* Support */,
+			);
+			path = "Viper Login";
+			sourceTree = "<group>";
+		};
+		BE13870E22F59A8700E8C626 /* Viper LoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE66ED28230B11250093448E /* Sources */,
+				BE13871122F59A8700E8C626 /* Info.plist */,
+			);
+			path = "Viper LoginTests";
+			sourceTree = "<group>";
+		};
+		BE13871A22F59ACB00E8C626 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D06230C4EDE000A1C32 /* Utilities */,
+				BE13872C22F59DEE00E8C626 /* Extensions */,
+				BE13871D22F59AF300E8C626 /* Modules */,
+				BE1386FA22F59A8300E8C626 /* AppDelegate.swift */,
+				BE66ED2B230B11720093448E /* main.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BE13871B22F59AD300E8C626 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE1386FE22F59A8300E8C626 /* Main.storyboard */,
+				BE13870322F59A8700E8C626 /* LaunchScreen.storyboard */,
+				BE13870122F59A8700E8C626 /* Assets.xcassets */,
+				BE13873922F5A20400E8C626 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE13871C22F59AD700E8C626 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BE13870622F59A8700E8C626 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		BE13871D22F59AF300E8C626 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BE13872022F59B0900E8C626 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BE13872022F59B0900E8C626 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BE13872122F59B0900E8C626 /* Presenter */,
+				BE13872322F59B0900E8C626 /* View */,
+				BE13872622F59B0900E8C626 /* Protocols */,
+				BE13872822F59B0900E8C626 /* Interactor */,
+				BE13872A22F59B0900E8C626 /* Router */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BE13872122F59B0900E8C626 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8CFF230C21D9000A1C32 /* Mappers */,
+				BE13872222F59B0900E8C626 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BE13872322F59B0900E8C626 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE13872422F59B0900E8C626 /* LoginViewController.storyboard */,
+				BE13872522F59B0900E8C626 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE13872622F59B0900E8C626 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE13872722F59B0900E8C626 /* LoginProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE13872822F59B0900E8C626 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BE362A5F22F62BC100AA7450 /* Errors */,
+				BE13873B22F5AE0000E8C626 /* UseCases */,
+				BE13872922F59B0900E8C626 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BE13872A22F59B0900E8C626 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BE13872B22F59B0900E8C626 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BE13872C22F59DEE00E8C626 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D03230C4E8F000A1C32 /* Dispatch */,
+				BE13873622F5A1C900E8C626 /* Foundation */,
+				BE13872D22F59DF300E8C626 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE13872D22F59DF300E8C626 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BE13872E22F59E0400E8C626 /* UIViewController+InstantiateFromStoryboard.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BE13873622F5A1C900E8C626 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				BE13873722F5A1D600E8C626 /* String+Localized.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		BE13873B22F5AE0000E8C626 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BE16411A22F5BEDB00DC2AC3 /* Timer */,
+				BE16410822F5B86700DC2AC3 /* UserCredentialsValidator */,
+				BE16410D22F5B8B100DC2AC3 /* UserAuthenticator */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BE16410822F5B86700DC2AC3 /* UserCredentialsValidator */ = {
+			isa = PBXGroup;
+			children = (
+				BE16410A22F5B87300DC2AC3 /* Protocols */,
+				BE16410922F5B86A00DC2AC3 /* Errors */,
+				BE13873C22F5AE2D00E8C626 /* UserCredentialsValidator.swift */,
+			);
+			path = UserCredentialsValidator;
+			sourceTree = "<group>";
+		};
+		BE16410922F5B86A00DC2AC3 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				BE16410622F5B37000DC2AC3 /* UserCredentialsValidationError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		BE16410A22F5B87300DC2AC3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE16410B22F5B88800DC2AC3 /* UserCredentialsValidatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE16410D22F5B8B100DC2AC3 /* UserAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEF4230B4BD700DE71E2 /* Mappers */,
+				BE3FDEDC230B297200DE71E2 /* Repository */,
+				BE16410F22F5B8BB00DC2AC3 /* Errors */,
+				BE16410E22F5B8B700DC2AC3 /* Protocols */,
+				BE16411522F5B99B00DC2AC3 /* UserAuthenticator.swift */,
+			);
+			path = UserAuthenticator;
+			sourceTree = "<group>";
+		};
+		BE16410E22F5B8B700DC2AC3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE16411022F5B8CA00DC2AC3 /* UserAuthenticatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE16410F22F5B8BB00DC2AC3 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				BE16411722F5BA1100DC2AC3 /* UserAuthenticationRequestError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		BE16411222F5B97C00DC2AC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE16411322F5B98300DC2AC3 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE16411A22F5BEDB00DC2AC3 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D02230C4E78000A1C32 /* DispatchQueueProtocol */,
+				BE16411C22F5BEDB00DC2AC3 /* Protocols */,
+				BE16411B22F5BEDB00DC2AC3 /* MainQueueTimer.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		BE16411C22F5BEDB00DC2AC3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE16411D22F5BEDB00DC2AC3 /* QueueTimer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE362A5F22F62BC100AA7450 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				BE362A6022F62C3600AA7450 /* UserAuthenticationError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		BE3FDED9230B1F5E00DE71E2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEDA230B1F6A00DE71E2 /* MockQueueTimer.swift */,
+				BEB66986230BE9EF002A4093 /* MockUserAuthenticator.swift */,
+				BEB66984230BE969002A4093 /* MockUserCredentialsValidator.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BE3FDEDC230B297200DE71E2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEF1230B46E200DE71E2 /* Mappers */,
+				BE3FDEE2230B40F000DE71E2 /* DataSource */,
+				BE16411222F5B97C00DC2AC3 /* Models */,
+				BE3FDEEE230B444B00DE71E2 /* Errors */,
+				BE3FDEDF230B3E5600DE71E2 /* Protocols */,
+				BE3FDEDD230B298200DE71E2 /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		BE3FDEDF230B3E5600DE71E2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEE0230B3E5F00DE71E2 /* UserRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE3FDEE2230B40F000DE71E2 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEEB230B433B00DE71E2 /* Errors */,
+				BE3FDEE6230B427500DE71E2 /* Models */,
+				BE3FDEE5230B426800DE71E2 /* Protocols */,
+				BE3FDEE9230B429700DE71E2 /* UserDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BE3FDEE5230B426800DE71E2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEE3230B40FA00DE71E2 /* UserDataSourceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE3FDEE6230B427500DE71E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEE7230B427B00DE71E2 /* UserResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE3FDEEB230B433B00DE71E2 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEEC230B434400DE71E2 /* UserDataSourceError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		BE3FDEEE230B444B00DE71E2 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEEF230B445900DE71E2 /* UserRepositoryError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		BE3FDEF1230B46E200DE71E2 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEF2230B471900DE71E2 /* UserRepositoryMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		BE3FDEF4230B4BD700DE71E2 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEF5230B4C1700DE71E2 /* UserAuthenticatorMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		BE3FDEF7230B540C00DE71E2 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BEB66980230BE8D4002A4093 /* Timer */,
+				BEB66981230BE8D9002A4093 /* UserCredentialsValidator */,
+				BEB6697F230BD332002A4093 /* UserAuthenticator */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BE66ED28230B11250093448E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BEE29044230BC91500C2D5FA /* Extensions */,
+				BE66ED2D230B16400093448E /* Login */,
+				BE66ED29230B11360093448E /* TestingAppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BE66ED2D230B16400093448E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8CF9230C1B31000A1C32 /* Router */,
+				BEB66988230BFB72002A4093 /* Presenter */,
+				BE66ED30230B165F0093448E /* Interactor */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BE66ED30230B165F0093448E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEF7230B540C00DE71E2 /* UseCases */,
+				BE3FDED9230B1F5E00DE71E2 /* Mocks */,
+				BEB66982230BE93A002A4093 /* LoginInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BE8E8CF9230C1B31000A1C32 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8CFC230C1D6D000A1C32 /* Mocks */,
+				BE8E8CFA230C1B41000A1C32 /* LoginRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BE8E8CFC230C1D6D000A1C32 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8CFD230C1D7D000A1C32 /* MockUIViewController.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BE8E8CFF230C21D9000A1C32 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D00230C2241000A1C32 /* AuthenticationResultMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		BE8E8D02230C4E78000A1C32 /* DispatchQueueProtocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DispatchQueueProtocol;
+			sourceTree = "<group>";
+		};
+		BE8E8D03230C4E8F000A1C32 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D04230C4EA0000A1C32 /* DispatchQueue+DispatchQueueProtocol.swift */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		BE8E8D06230C4EDE000A1C32 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D07230C4EE1000A1C32 /* Dispatch */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BE8E8D07230C4EE1000A1C32 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D08230C4EEC000A1C32 /* DispatchQueueProtocol.swift */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		BE8E8D0A230C4F5D000A1C32 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D0B230C4F70000A1C32 /* MockDispatchQueue.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BEB6697F230BD332002A4093 /* UserAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D0F230C53BF000A1C32 /* UserRepositoryMapperTests.swift */,
+				BEE29049230BCB1C00C2D5FA /* UserRepositoryTests.swift */,
+				BE3FDEFB230BC86E00DE71E2 /* UserDataSourceTests.swift */,
+				BE3FDED7230B1EFD00DE71E2 /* UserAuthenticatorTests.swift */,
+				BE8E8D13230C5AB8000A1C32 /* UserAuthenticatorMapperTests.swift */,
+				BEE2904B230BCB3500C2D5FA /* Mocks */,
+			);
+			path = UserAuthenticator;
+			sourceTree = "<group>";
+		};
+		BEB66980230BE8D4002A4093 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8D0A230C4F5D000A1C32 /* Mocks */,
+				BE66ED31230B16660093448E /* MainQueueTimerTests.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		BEB66981230BE8D9002A4093 /* UserCredentialsValidator */ = {
+			isa = PBXGroup;
+			children = (
+				BE3FDEF8230B542300DE71E2 /* UserCredentialsValidatorTests.swift */,
+			);
+			path = UserCredentialsValidator;
+			sourceTree = "<group>";
+		};
+		BEB66988230BFB72002A4093 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BEB6698B230BFBA0002A4093 /* Mocks */,
+				BEB66989230BFB7D002A4093 /* LoginPresenterTests.swift */,
+				BE8E8D1B230C614B000A1C32 /* AuthenticationResultMapperTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BEB6698B230BFBA0002A4093 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB6698C230BFBBB002A4093 /* MockLoginView.swift */,
+				BEB6698E230BFC0F002A4093 /* MockLoginInteractor.swift */,
+				BE8E8D19230C6017000A1C32 /* MockAuthenticationResultMapper.swift */,
+				BEB66990230BFC84002A4093 /* MockLoginRouter.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BEE29044230BC91500C2D5FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEE29045230BC92500C2D5FA /* Result+GetError.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BEE2904B230BCB3500C2D5FA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BEE2904C230BCB4E00C2D5FA /* MockUserDataSource.swift */,
+				BEB6697D230BD2B3002A4093 /* MockUserRepository.swift */,
+				BE8E8D17230C5D6C000A1C32 /* MockUserAuthenticatorMapper.swift */,
+				BE8E8D11230C564C000A1C32 /* MockUserRepositoryMapper.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE1386F622F59A8300E8C626 /* Viper Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE13871422F59A8700E8C626 /* Build configuration list for PBXNativeTarget "Viper Login" */;
+			buildPhases = (
+				7BE379AD180CE238F57E4D8A /* [CP] Check Pods Manifest.lock */,
+				BE1386F322F59A8300E8C626 /* Sources */,
+				BE1386F422F59A8300E8C626 /* Frameworks */,
+				BE1386F522F59A8300E8C626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viper Login";
+			productName = "Viper Login";
+			productReference = BE1386F722F59A8300E8C626 /* Viper Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE13870A22F59A8700E8C626 /* Viper LoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE13871722F59A8700E8C626 /* Build configuration list for PBXNativeTarget "Viper LoginTests" */;
+			buildPhases = (
+				CD3FEE265B36B290869E6DA3 /* [CP] Check Pods Manifest.lock */,
+				BE13870722F59A8700E8C626 /* Sources */,
+				BE13870822F59A8700E8C626 /* Frameworks */,
+				BE13870922F59A8700E8C626 /* Resources */,
+				8EF1F10D0B0DAC5BB42C5687 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE13870D22F59A8700E8C626 /* PBXTargetDependency */,
+			);
+			name = "Viper LoginTests";
+			productName = "Viper LoginTests";
+			productReference = BE13870B22F59A8700E8C626 /* Viper LoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE1386EF22F59A8300E8C626 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Hristic Luka";
+				TargetAttributes = {
+					BE1386F622F59A8300E8C626 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+					BE13870A22F59A8700E8C626 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = BE1386F622F59A8300E8C626;
+					};
+				};
+			};
+			buildConfigurationList = BE1386F222F59A8300E8C626 /* Build configuration list for PBXProject "Viper Login" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE1386EE22F59A8300E8C626;
+			productRefGroup = BE1386F822F59A8300E8C626 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE1386F622F59A8300E8C626 /* Viper Login */,
+				BE13870A22F59A8700E8C626 /* Viper LoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE1386F522F59A8300E8C626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE13873A22F5A20400E8C626 /* Localizable.strings in Resources */,
+				BE13873122F59ECA00E8C626 /* LoginViewController.storyboard in Resources */,
+				BE13870522F59A8700E8C626 /* LaunchScreen.storyboard in Resources */,
+				BE13870222F59A8700E8C626 /* Assets.xcassets in Resources */,
+				BE13870022F59A8300E8C626 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE13870922F59A8700E8C626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BE379AD180CE238F57E4D8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viper Login-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF1F10D0B0DAC5BB42C5687 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viper LoginTests/Pods-Viper LoginTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viper LoginTests/Pods-Viper LoginTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viper LoginTests/Pods-Viper LoginTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD3FEE265B36B290869E6DA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viper LoginTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE1386F322F59A8300E8C626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE16411622F5B99B00DC2AC3 /* UserAuthenticator.swift in Sources */,
+				BE8E8D05230C4EA0000A1C32 /* DispatchQueue+DispatchQueueProtocol.swift in Sources */,
+				BE3FDEE8230B427B00DE71E2 /* UserResponse.swift in Sources */,
+				BE16411422F5B98300DC2AC3 /* User.swift in Sources */,
+				BE13873222F59ECA00E8C626 /* LoginViewController.swift in Sources */,
+				BE13873D22F5AE2D00E8C626 /* UserCredentialsValidator.swift in Sources */,
+				BE16410C22F5B88800DC2AC3 /* UserCredentialsValidatorProtocol.swift in Sources */,
+				BE13873322F59ECA00E8C626 /* LoginProtocols.swift in Sources */,
+				BE8E8D09230C4EEC000A1C32 /* DispatchQueueProtocol.swift in Sources */,
+				BE16411F22F5BEDB00DC2AC3 /* QueueTimer.swift in Sources */,
+				BE362A6122F62C3600AA7450 /* UserAuthenticationError.swift in Sources */,
+				BE13873822F5A1D600E8C626 /* String+Localized.swift in Sources */,
+				BE16411822F5BA1100DC2AC3 /* UserAuthenticationRequestError.swift in Sources */,
+				BE13873422F59ECA00E8C626 /* LoginInteractor.swift in Sources */,
+				BE3FDEE4230B40FA00DE71E2 /* UserDataSourceProtocol.swift in Sources */,
+				BE16411122F5B8CA00DC2AC3 /* UserAuthenticatorProtocol.swift in Sources */,
+				BE16411E22F5BEDB00DC2AC3 /* MainQueueTimer.swift in Sources */,
+				BE13873022F59EC900E8C626 /* LoginPresenter.swift in Sources */,
+				BE8E8D01230C2241000A1C32 /* AuthenticationResultMapper.swift in Sources */,
+				BE3FDEE1230B3E5F00DE71E2 /* UserRepositoryProtocol.swift in Sources */,
+				BE3FDEF0230B445900DE71E2 /* UserRepositoryError.swift in Sources */,
+				BE3FDEF3230B471900DE71E2 /* UserRepositoryMapper.swift in Sources */,
+				BE3FDEEA230B429700DE71E2 /* UserDataSource.swift in Sources */,
+				BE13872F22F59E0400E8C626 /* UIViewController+InstantiateFromStoryboard.swift in Sources */,
+				BE66ED2C230B11720093448E /* main.swift in Sources */,
+				BE13873522F59ECA00E8C626 /* LoginRouter.swift in Sources */,
+				BE1386FB22F59A8300E8C626 /* AppDelegate.swift in Sources */,
+				BE3FDEDE230B298200DE71E2 /* UserRepository.swift in Sources */,
+				BE16410722F5B37000DC2AC3 /* UserCredentialsValidationError.swift in Sources */,
+				BE3FDEED230B434400DE71E2 /* UserDataSourceError.swift in Sources */,
+				BE3FDEF6230B4C1700DE71E2 /* UserAuthenticatorMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE13870722F59A8700E8C626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB66991230BFC84002A4093 /* MockLoginRouter.swift in Sources */,
+				BEB6697E230BD2B3002A4093 /* MockUserRepository.swift in Sources */,
+				BE8E8D10230C53BF000A1C32 /* UserRepositoryMapperTests.swift in Sources */,
+				BEB66983230BE93A002A4093 /* LoginInteractorTests.swift in Sources */,
+				BEB6698F230BFC0F002A4093 /* MockLoginInteractor.swift in Sources */,
+				BE8E8D1A230C6017000A1C32 /* MockAuthenticationResultMapper.swift in Sources */,
+				BEB6698A230BFB7D002A4093 /* LoginPresenterTests.swift in Sources */,
+				BEB66987230BE9EF002A4093 /* MockUserAuthenticator.swift in Sources */,
+				BE8E8D18230C5D6C000A1C32 /* MockUserAuthenticatorMapper.swift in Sources */,
+				BE3FDEDB230B1F6A00DE71E2 /* MockQueueTimer.swift in Sources */,
+				BE3FDED8230B1EFD00DE71E2 /* UserAuthenticatorTests.swift in Sources */,
+				BE8E8CFE230C1D7D000A1C32 /* MockUIViewController.swift in Sources */,
+				BEB6698D230BFBBB002A4093 /* MockLoginView.swift in Sources */,
+				BE8E8D12230C564C000A1C32 /* MockUserRepositoryMapper.swift in Sources */,
+				BE66ED2A230B11360093448E /* TestingAppDelegate.swift in Sources */,
+				BE3FDEF9230B542300DE71E2 /* UserCredentialsValidatorTests.swift in Sources */,
+				BE8E8D1C230C614B000A1C32 /* AuthenticationResultMapperTests.swift in Sources */,
+				BEB66985230BE969002A4093 /* MockUserCredentialsValidator.swift in Sources */,
+				BE8E8D0C230C4F70000A1C32 /* MockDispatchQueue.swift in Sources */,
+				BE8E8D14230C5AB8000A1C32 /* UserAuthenticatorMapperTests.swift in Sources */,
+				BE66ED32230B16660093448E /* MainQueueTimerTests.swift in Sources */,
+				BEE2904D230BCB4E00C2D5FA /* MockUserDataSource.swift in Sources */,
+				BE8E8CFB230C1B41000A1C32 /* LoginRouterTests.swift in Sources */,
+				BEE29046230BC92500C2D5FA /* Result+GetError.swift in Sources */,
+				BEE2904A230BCB1C00C2D5FA /* UserRepositoryTests.swift in Sources */,
+				BE3FDEFC230BC86E00DE71E2 /* UserDataSourceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE13870D22F59A8700E8C626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE1386F622F59A8300E8C626 /* Viper Login */;
+			targetProxy = BE13870C22F59A8700E8C626 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE1386FE22F59A8300E8C626 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE1386FF22F59A8300E8C626 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE13870322F59A8700E8C626 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE13870422F59A8700E8C626 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE13871222F59A8700E8C626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE13871322F59A8700E8C626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE13871522F59A8700E8C626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E0F1BB1EAEB709121E0EA58 /* Pods-Viper Login.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Viper Login/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hristic.luka.Viper-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BE13871622F59A8700E8C626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098D926B5E13E89535E2112A /* Pods-Viper Login.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Viper Login/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hristic.luka.Viper-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BE13871822F59A8700E8C626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F6D90307DFAE0D3C918150 /* Pods-Viper LoginTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Viper LoginTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hristic.luka.Viper-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper Login.app/Viper Login";
+			};
+			name = Debug;
+		};
+		BE13871922F59A8700E8C626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCEF1D76A28C78609F397F2D /* Pods-Viper LoginTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Viper LoginTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hristic.luka.Viper-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper Login.app/Viper Login";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE1386F222F59A8300E8C626 /* Build configuration list for PBXProject "Viper Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE13871222F59A8700E8C626 /* Debug */,
+				BE13871322F59A8700E8C626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE13871422F59A8700E8C626 /* Build configuration list for PBXNativeTarget "Viper Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE13871522F59A8700E8C626 /* Debug */,
+				BE13871622F59A8700E8C626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE13871722F59A8700E8C626 /* Build configuration list for PBXNativeTarget "Viper LoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE13871822F59A8700E8C626 /* Debug */,
+				BE13871922F59A8700E8C626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE1386EF22F59A8300E8C626 /* Project object */;
+}
