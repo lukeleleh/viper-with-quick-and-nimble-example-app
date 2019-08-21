@@ -1,11 +1,8 @@
 # UNIT TESTING VIPER LOGIN
 VIPER login example app used for a presentation with basic credentials validation and fake authentication. The project includes a tests target whose VIPER components (mainly presenter and interactor) and inner parts (use cases, repositories, data sources, mappers) are unit tested with Quick and Nimble.
 
-<img src="Resources/img/Screenshot_1.png" width="350"/>
-
-<img src="Resources/img/Screenshot_2.png" width="350"/>
-
-<img src="Resources/img/Screenshot_3.png" width="350"/>
+<img src="Resources/img/Screenshot_1.png" width="430"/><img src="Resources/img/Screenshot_2.png" width="430"/>
+<img src="Resources/img/Screenshot_3.png" width="430"/>
 
 ## Requirements
 
